@@ -44,3 +44,28 @@ jobs:
             - name: Summary
               run: |
                   echo "Workflowid: $GITHUB_RUN_ID" > $GITHUB_STEP_SUMMARY
+    deploy:
+          needs: build
+          runs-on: deploy
+          environment: ${{ inputs.environments }}
+          steps:
+          - name: Backup artifacts
+            run: |
+              Copy-Item -Path ${{ vars.DEPLOYMENTPATH  }}/* -Destination ${{ vars.BACKUP_PATH }} -Force
+
+          - name: echo BackupPath
+            run: |
+              cd ${{ vars.BACKUP_PATH }}
+              dir
+          - name: download artifacts
+            uses: actions/download-artifact@v4
+            with:
+               name: Build-Artifacts
+               path: ${{ vars.DEPLOYMENTPATH }}
+
+          - name: Restart IIS
+            run: |
+                 echo "restart IIS"
+          - name: check status
+            run: |
+                echo "IIS Status"
