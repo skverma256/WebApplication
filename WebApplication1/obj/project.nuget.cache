@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "YhEhUatSDAxCoVEn3ywdCCkdX/L31Lqx7uWkrbtlpkouCsvDA7hpzOQogwP7X0MkGqfsLaLTK1D+8XUD9InLTQ==",
+  "dgSpecHash": "KIIScCaTgBAnVo3MXerfhpGRPICQRH80tVpuBMnq1oKgnAPFdSqnSs/QkBZMppx1YHk74J53QdX8zP7Hkkuylw==",
   "success": true,
-  "projectFilePath": "C:\\GitRepo\\WebApplication1\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "C:\\WebApplicationForGit\\WebApplication1\\WebApplication1.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\sachinkv\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
     "C:\\Users\\sachinkv\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\sachinkv\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
     "C:\\Users\\sachinkv\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
     "C:\\Users\\sachinkv\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
   ],
