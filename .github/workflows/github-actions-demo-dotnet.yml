@@ -1,9 +1,16 @@
 name: ci-cd 
 
 run-name: BuildDotnet
-
-on:
-   [workflow_dispatch]  
+on: 
+  workflow_dispatch:
+      inputs:
+          environments:
+              description: To deploy for env
+              type: environment
+              required: true
+          deploy:
+              description: deploy 
+              type: boolean
 
 jobs:
     build:
