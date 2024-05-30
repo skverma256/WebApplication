@@ -1,6 +1,6 @@
 name: ci-cd 
 
-run-name: BuildDotnet
+run-name: BuildDotnet-by-${{ github.actor}}
 on: 
   workflow_dispatch:
       inputs:
