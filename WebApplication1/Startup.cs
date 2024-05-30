@@ -34,7 +34,7 @@ namespace WebApplication1
             {
                 endpoints.MapGet("/", async context =>
                 {
-                    await context.Response.WriteAsync("Welcome!! this is new Continuous deployment using Git hub test new!");
+                    await context.Response.WriteAsync("15 Welcome!! this is new Continuous deployment using Git hub test new!");
                 });
             });
         }
