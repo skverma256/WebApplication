@@ -1,0 +1,17 @@
+name: hello-world-workflow
+on: push
+jobs:
+ 
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-first-job-step
+        run: echo "Hello World!"
+        shell: bash
+ 
+  my-second-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-second-job-step
+        run: echo "my-second-job!"
+        shell: bash
