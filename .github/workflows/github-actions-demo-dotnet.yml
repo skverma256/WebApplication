@@ -40,3 +40,7 @@ jobs:
                   name: Build-Artifacts
                   path: ${{ github.workspace  }}/${{ vars.ARTIFACTPATH }}
                   retention-days: 5
+
+            - name: Summary
+              run: |
+                  echo "Workflowid: $GITHUB_RUN_ID" > $GITHUB_STEP_SUMMARY
