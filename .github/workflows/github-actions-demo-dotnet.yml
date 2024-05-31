@@ -23,7 +23,24 @@ jobs:
               uses: actions/setup-dotnet@v4
               with:
                  dotnet-version: '6.0.x'
-
+            - name: setupJava
+              uses: actions/setup-java@v4
+              with:
+                   distribution: 'temurin' # See 'Supported distributions' for available options
+                   java-version: '17'
+   
+            - name: download dotnet sonarscanner
+              run: |
+                   dotnet tool install --global dotnet-sonarscanner
+   
+            - name: Restore dependencies
+              run: |
+                   dotnet restore
+   
+            - name: Sonarbegin
+              run: |
+                  dotnet sonarscanner begin /k:"DotnetPocDemo" /d:sonar.host.url="${{ vars.SONARHOST }}"  /d:sonar.token="${{ secrets.SONARTOKEN }}"
+   
             
             - name: Dotnet Build
               run: |
