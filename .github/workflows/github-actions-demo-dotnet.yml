@@ -45,6 +45,9 @@ jobs:
             - name: Dotnet Build
               run: |
                 dotnet build
+            - name: sonarend
+              run: |
+                 dotnet sonarscanner end /d:sonar.token="${{ secrets.SONARTOKEN }}"
 
             - name: Dotnet Publish
               run: |
