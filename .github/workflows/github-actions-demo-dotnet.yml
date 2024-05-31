@@ -39,7 +39,7 @@ jobs:
    
             - name: Sonarbegin
               run: |
-                  dotnet sonarscanner begin /k:"DotnetPocDemo" /d:sonar.host.url="${{ vars.SONARHOST }}"  /d:sonar.token="${{ secrets.SONARTOKEN }}"
+                  dotnet sonarscanner begin /k:"DotnetPocDemoSachin" /d:sonar.host.url="${{ vars.SONARHOST }}"  /d:sonar.token="${{ secrets.SONARTOKEN }}"
    
             
             - name: Dotnet Build
